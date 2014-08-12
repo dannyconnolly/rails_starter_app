@@ -1,0 +1,4 @@
+== Welcome to RailsStarterApp
+
+RailsStarterApp is a Rails application with User Auth using Devise and uses Foundation for UI
+

@@ -1,0 +1,27 @@
+<h1>Listing profiles</h1>
+
+<table>
+  <tr>
+    <th>Phone 1</th>
+    <th>Phone 2</th>
+    <th>Fax</th>
+    <th>Url</th>
+    <th colspan="3">Actions</th>
+  </tr>
+
+  <% @profiles.each do |profile| %>
+    <tr>
+      <td><%= profile.phone_1 %></td>
+      <td><%= profile.phone_2 %></td>
+      <td><%= profile.fax %></td>
+      <td><%= profile.url %></td>
+      <td><%= link_to 'Show', profile %></td>
+      <td><%= link_to 'Edit', edit_profile_path(profile) %></td>
+      <td><%= link_to 'Destroy', profile, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Profile', new_profile_path %>

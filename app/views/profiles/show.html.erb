@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Phone 1:</b>
+  <%= @profile.phone_1 %>
+</p>
+
+<p>
+  <b>Phone 2:</b>
+  <%= @profile.phone_2 %>
+</p>
+
+<p>
+  <b>Fax:</b>
+  <%= @profile.fax %>
+</p>
+
+<p>
+  <b>Url:</b>
+  <%= @profile.url %>
+</p>
+
+
+<%= link_to 'Edit', edit_profile_path(@profile) %> |
+<%= link_to 'Back', profiles_path %>

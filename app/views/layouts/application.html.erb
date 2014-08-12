@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Vaultr</title>
+
+    <%= stylesheet_link_tag "application", :media => "all" %>
+    <%= javascript_include_tag "vendor/modernizr" %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <%= render 'layouts/nav' %>
+
+    <section class="large-12 columns content">
+      <div class="row">
+        <%= yield %>
+      </div>
+    </section>
+
+    <%= javascript_include_tag "application" %>
+  </body>
+</html>

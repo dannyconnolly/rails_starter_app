@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+<div class="large-4 columns">
+  <h2>Account</h2>
+  <p>
+    <b>Username:</b>
+    <%= @user.username %>
+  </p>
+
+  <p>
+    <b>Email:</b>
+    <%= @user.email %>
+  </p>
+
+
+  <%= link_to('Edit', edit_user_registration_path) %> |
+  <%= link_to 'Back', users_path %>
+</div>
+
+<div class="large-3 columns">
+  <h3>Profile</h3>
+
+  <p>
+    <b>Phone 1:</b>
+    <%= @profile.phone_1 %>
+  </p>
+
+  <p>
+    <b>Phone 2:</b>
+    <%= @profile.phone_2 %>
+  </p>
+
+  <p>
+    <b>Fax:</b>
+    <%= @profile.fax %>
+  </p>
+
+  <p>
+    <b>Url:</b>
+    <%= @profile.url %>
+  </p>
+
+
+  <%= link_to 'Edit', edit_profile_path(@profile) %> |
+  <%= link_to 'Back', profiles_path %>
+</div>
+
+<div class="large-3 columns">
+  <h4>Other</h4>
+</div>
